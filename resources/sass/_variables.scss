@@ -1,11 +1,14 @@
-$my-font1: 'PT Sans', sans-serif;
-$my-font2: 'Open Sans Condensed', sans-serif;
+$main-font: 'PT Sans', sans-serif;
+$second-font: 'Open Sans Condensed', sans-serif;
 
-$nav-bar-textcolor: rgb(255, 255, 255);
-$main-color: rgb(118, 118, 118);
+$light-gray: #dcdcdc;
+$dark-gray: #777777;
+$dark-gray-text: #767676;  //$main-color: rgb(118, 118, 118);
+$white-text: rgb(255, 255, 255);  //$nav-bar-textcolor: rgb(255, 255, 255);
 $black-color: rgb(68, 68, 68);
+
 // Body
-$body-bg: #f8fafc;
+$body-bg: #ffffff;
 
 // Typography
 $font-family-sans-serif: "Nunito", sans-serif;

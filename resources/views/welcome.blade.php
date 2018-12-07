@@ -91,7 +91,9 @@
                 <div class="title m-b-md">
                     <a href="{{ route('test')}}">Test Task</a>
                 </div>
-
+                <div class="title m-b-md">
+                    <a href="{{ route('test2')}}">Test Task V2</a>
+                </div>
 
             </div>
         </div>

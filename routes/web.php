@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 
 Route::match(['get','post'],'/test',['uses'=>'TaskController@index','as'=>'test']);
+Route::match(['get','post'],'/test2',['uses'=>'Task2Controller@index','as'=>'test2']);
