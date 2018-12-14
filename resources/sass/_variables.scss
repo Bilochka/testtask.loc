@@ -1,11 +1,11 @@
-$main-font: 'PT Sans', sans-serif;
-$second-font: 'Open Sans Condensed', sans-serif;
+//$main-font: 'PT Sans', sans-serif;
+//$second-font: 'Open Sans Condensed', sans-serif;
 
-$light-gray: #dcdcdc;
-$dark-gray: #777777;
-$dark-gray-text: #767676;  //$main-color: rgb(118, 118, 118);
-$white-text: rgb(255, 255, 255);  //$nav-bar-textcolor: rgb(255, 255, 255);
-$black-color: rgb(68, 68, 68);
+$light-gray: #dcdcdc;     // rgb(220, 220, 220);
+$dark-gray: #777777;      // rgb(119, 119, 119);
+$dark-gray-text: #767676; // rgb(118, 118, 118);
+$white-text:#ffffff;      // rgb(255, 255, 255);
+$black-color: #444444;    // rgb(68, 68, 68);
 
 // Body
 $body-bg: #ffffff;
@@ -28,4 +28,32 @@ $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
 
+//@media
+
+$media-xl-1200: 1200px;
+$media-lg-992: 992px;
+$media-md-768: 768px;
+$media-sm-576: 576px;
+
+$media-1199: 1199px;
+$media-991: 991px;
+$media-767: 767px;
+$media-575: 575px;
+
+
+//@mixin
+
+@mixin font-PT-Sans($fsize, $lheight, $fcolor) {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: $fsize;
+  line-height: $lheight;
+  color: $fcolor;
+}
+
+@mixin font-open-sans($fsize, $lheight,  $fcolor) {
+  font-family: 'Open Sans Condensed', Arial, sans-serif;
+  font-size: $fsize;
+  line-height: $lheight;
+  color: $fcolor;
+}
 

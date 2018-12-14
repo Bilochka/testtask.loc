@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, maximum-scale=1">
-    <title>Test</title>
+    <title>Test2</title>
     <link rel="icon" href="favicon.png" type="image/png">
     <link href="{{URL::asset('css/app.css') }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -12,22 +12,25 @@
 
 </head>
 <body>
-<div class="wraper">
+<div class="wrapper ">
     <header >
-        <div  class="mycontainer  header-box">
-            <div class="row-header">
-                <div class="item-head-left flex-conteiner">
-                    <div class="box-info">
-                        <div class="company-info">
-                            <img src="img\logo-test.png" class="logo" alt="" />
-                        </div>
-                        <div class="company-info">
-                            <div id="company-name">Название компании</div>
-                            <div id="description">Самая клевая компания</div>
+        <div  class="container top-header">
+            <div class="row d-flex flex-wrap flex-lg-nowrap justify-content-center justify-content-lg-between">
+                <div class="col-lg-6 box-info d-flex flex-row flex-nowrap">
+                    {{--<div class="box-info">--}}
+                    <div class=" company-info1">
+                        <div class=" logo">
+                            <img src="img\logo-test.png" class="logo-img" alt="" />
                         </div>
                     </div>
+                    <div class="company-info2">
+                        <div id="company-name">Название компании</div>
+                        <div id="description">cамая клевая компания</div>
+                    </div>
+                    {{--</div>--}}
                 </div>
-                <div class="item-head-right flex-conteiner">
+
+                <div class="col-lg-6 box-connection d-flex flex-column flex-wrap ">
                     <div class="connection">+7(499) 777 77 77
                     </div>
                     <div class="connection">+7(499) 777 77 77
@@ -38,66 +41,71 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar1">
-                <ul class="navbar-nav flex-conteiner mr-auto">
-                    <li class="nav-item border-my ">
-                        <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item border-my">
-                        <a class="nav-link" href="#">Каталог</a>
-                    </li>
-                    <li class="nav-item border-my">
-                        <a class="nav-link" href="#">Доставка и оплата</a>
-                    </li>
-                    <li class="nav-item border-my">
-                        <a class="nav-link" href="#">Прайс-лист</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Контакты</a>
-                    </li>
-                </ul>
-            </div>
+
+        {{--<div  class="container-nav">--}}
+        <nav class="navbar navbar-expand-sm ">
+            <ul class="navbar-nav container d-flex flex-wrap flex-row justify-content-center justify-content-lg-between">
+                <li class="nav-item border-item ">
+                    <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item border-item">
+                    <a class="nav-link" href="#">Каталог</a>
+                </li>
+                <li class="nav-item border-item">
+                    <a class="nav-link" href="#">Доставка и оплата</a>
+                </li>
+                <li class="nav-item border-item">
+                    <a class="nav-link" href="#">Прайс-лист</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+            </ul>
         </nav>
+        {{--</div>--}}
     </header>
-    <div id="demo" class="carousel slide flex-conteiner" data-ride="carousel">
 
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
+    {{--<div id="demo" class="carousel slide flex-conteiner" data-ride="carousel">--}}
 
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img\Slider.png" alt="Los Angeles" width="100%" height="500">
-            </div>
-            <div class="carousel-item">
-                <img src="img\Slider2.png" alt="Chicago" width="100%" height="500">
-            </div>
-        </div>
+    {{--<!-- The slideshow -->--}}
+    {{--<div class="carousel-inner">--}}
+    {{--<div class="carousel-item active">--}}
+    {{--<img src="img\next5.jpg" alt="Los Angeles"  >--}}
+    {{--</div>--}}
+    {{--<div class="carousel-item">--}}
+    {{--<img src="img\next1.jpg" alt="Chicago"  >--}}
+    {{--</div>--}}
+    {{--<div class="carousel-item">--}}
+    {{--<img src="img\next2.jpg" alt="Chicago" >--}}
+    {{--</div>--}}
+    {{--<div class="carousel-item">--}}
+    {{--<img src="img\next3.jpeg" alt="Chicago"  >--}}
+    {{--</div>--}}
+    {{--<div class="carousel-item">--}}
+    {{--<img src="img\next4.jpeg" alt="Chicago" >--}}
+    {{--</div>--}}
 
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev " id="pointer-prev" href="#demo" data-slide="prev">
-            <img src="img\left-pointer.png" class="slider-img" alt="" />
-        </a>
-        <a class="carousel-control-next " id="pointer-next" href="#demo" data-slide="next">
-            <img src="img\right-pointer.png" class="slider-img" alt="" />
-        </a>
-    </div>
-    <div  class="mycontainer  content">
+    {{--</div>--}}
+
+    {{--<!-- Left and right controls -->--}}
+    {{--<a class="carousel-control-prev " id="pointer-prev" href="#demo" data-slide="prev">--}}
+    {{--<img src="img\left-pointer.png" class="slider-img" alt="" />--}}
+    {{--</a>--}}
+    {{--<a class="carousel-control-next " id="pointer-next" href="#demo" data-slide="next">--}}
+    {{--<img src="img\right-pointer.png" class="slider-img" alt="" />--}}
+    {{--</a>--}}
+
+    {{--</div>--}}
+
+    <div  class="content">
         <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Главная</a></li>
             <li class="breadcrumb-item"><a href="#">Каталог</a></li>
             <li class="breadcrumb-item active">Бытовая техника</li>
         </ul>
-        <div class="catalog">
-            <div class=" leftblock">
+        <div class="catalog row d-flex flex-wrap justify-content-lg-between justify-content-center  ">
+            <div class=" leftblock col-lg-3 col-md-4 col-sm-6 col-12 ">
+                {{--d-flex flex-column flex-nowrap justify-content-center justify-content-lg-start--}}
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -180,8 +188,8 @@
                     <div class="price-list">Прайс-лист</div>
                 </div>
             </div>
-            <div class="centerblock">
-                <div class="goods-conteiner">
+            <div class="centerblock col-lg-9 col-md-8  col-sm-6 col-12">
+                <div class="goods-conteiner d-flex flex-wrap align-items-stretch">
                     <div class="tint">
                         <div class="goods_inside">
                             <img src="img\nophoto.png" class="goods-img" alt="" />
@@ -233,18 +241,20 @@
                         </div>
                     </div>
                 </div>
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                        <li class="page-item"><a class="page-link" href="#">5</a></li>
-                        <li class="page-item"><a class="page-link" href="#">6</a></li>
-                        <li class="page-item"><a class="page-link" href="#">7</a></li>
-                    </ul>
-                </nav>
-                <div class="catalog about-catalog">
+                <div class="pagination-box">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                            <li class="page-item"><a class="page-link" href="#">7</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="about-catalog d-flex flex-nowrap flex-row justify-content-center">
                     <div class="about-left">
                         <p class="about-text">Компания «Пиксель Плюс» существует более 6 лет, за это время мы.
                             Компания «Пиксель Плюс» существует более 6 лет, за это время мы.
@@ -253,42 +263,43 @@
                             Компания «Пиксель Плюс» существует более 6 лет, за это время мы</p>
                     </div>
                     <div class="about-right">
-                        <p class="about-text">Одним из основных направлений работ нашей компании является пои
-                            Одним из основных направлений работ нашей компании является пои
-                            Одним из основных направлений работ нашей компании является пои
-                            Одним из основных направлений работ нашей компании является пои
-                            Одним из основных направлений работ нашей компании является пои</p>
+                        <p class="about-text">Одним из основных направлений работ нашей компании является
+                            Одним из основных направлений работ нашей компании является
+                            Одним из основных направлений работ нашей компании является
+                            Одним из основных направлений работ нашей компании является
+                            Одним из основных направлений работ нашей компании является </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="bg-secondary">
-        <div  class="mycontainer catalog">
-            <div  class="left-footer">
+
+    <footer >
+        <div  class="footer-box row">
+            <div  class=" left-footer col-lg-4 col-12">
                 <p> © 2012–2013 ЗАО «Компания» </p>
                 <p>info@name.ru</p>
             </div>
-            <div  class="center-footer">
+            <div  class="center-footer col-lg-4 col-12">
                 <ul class="list-footer">
                     <li class="li-footer">
-                        <a class="footer-link" href="#">Главная <span class="sr-only">(current)</span></a>
+                        <a href="#">Главная <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="li-footer">
-                        <a class="footer-link" href="#">Каталог</a>
+                        <a href="#">Каталог</a>
                     </li>
                     <li class="li-footer">
-                        <a class="footer-link" href="#">Доставка и оплата</a>
+                        <a href="#">Доставка и оплата</a>
                     </li>
                     <li class="li-footer">
-                        <a class="footer-link" href="#">Прайс-лист</a>
+                        <a  href="#">Прайс-лист</a>
                     </li>
                     <li class="li-footer">
-                        <a class="footer-link" href="#">Контакты</a>
+                        <a href="#">Контакты</a>
                     </li>
                 </ul>
             </div>
-            <div  class="right-footer catalog">
+            <div  class="right-footer  col-lg-4 col-12">
                 <img src="img\dev-logo.png" class="dev-logo" alt="" />
                 <div class="dev-comp">
                     <p> Разработка сайта — </p>
@@ -296,7 +307,34 @@
                 </div>
             </div>
         </div>
+        {{--<div class="row" style="height: 60px"  >--}}
+        {{--<div class="col-lg-1" style="background-color:#9561e2 " >--}}
+        {{--</div>--}}
+        {{--<div class="col-lg-1" style="background-color:#843534 " >--}}
+        {{--</div>--}}
+        {{--<div class="col-lg-1" style="background-color:#a6d5ec " >--}}
+        {{--</div>--}}
+        {{--<div class="col-lg-1" style="background-color:#ffed4a " >--}}
+        {{--</div>--}}
+        {{--<div class="col-lg-1" style="background-color:#f7ecb5 " >--}}
+        {{--</div>--}}
+        {{--<div class="col-lg-1" style="background-color:#64d5ca " >--}}
+        {{--</div>--}}
+        {{--<div class="col-lg-1" style="background-color:#f7f7f7 " >--}}
+        {{--</div>--}}
+        {{--<div class="col-lg-1" style="background-color:#d9534f " >--}}
+        {{--</div>--}}
+        {{--<div class="col-lg-1" style="background-color:#3490dc " >--}}
+        {{--</div>--}}
+        {{--<div class="col-lg-1" style="background-color:#c4e3f3 " >--}}
+        {{--</div>--}}
+        {{--<div class="col-lg-1" style="background-color:#eba5a3 " >--}}
+        {{--</div>--}}
+        {{--<div class="col-lg-1" style="background-color:#9561e2 " >--}}
+        {{--</div>--}}
+        {{--</div>--}}
     </footer>
+
 </div>
 </body>
 </html>

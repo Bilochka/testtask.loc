@@ -12,25 +12,24 @@
 
 </head>
 <body>
-<div class="wrapper">
+
+<div class="wrapper ">
     <header >
         <div  class="container top-header">
-            <div class="row d-flex flex-wrap flex-lg-nowrap justify-content-center justify-content-lg-between">
-                <div class="col-lg-6 box-info d-flex flex-row flex-nowrap">
-                    {{--<div class="box-info">--}}
-                        <div class=" company-info1">
+            <div class="row ">
+                <div class="col-md-6 box-info row">
+                        <div class="col-3 company-info1">
                             <div class=" logo">
                                 <img src="img\logo-test.png" class="logo-img" alt="" />
                             </div>
                         </div>
-                        <div class="company-info2">
+                        <div class="company-info2 col-9">
                             <div id="company-name">Название компании</div>
                             <div id="description">cамая клевая компания</div>
                         </div>
-                    {{--</div>--}}
                 </div>
 
-                <div class="col-lg-6 box-connection d-flex flex-column flex-wrap ">
+                <div class="col-md-6 box-connection d-flex flex-column flex-wrap ">
                     <div class="connection">+7(499) 777 77 77
                     </div>
                     <div class="connection">+7(499) 777 77 77
@@ -42,7 +41,6 @@
             </div>
         </div>
 
-        {{--<div  class="container-nav">--}}
             <nav class="navbar navbar-expand-sm ">
                 <ul class="navbar-nav container d-flex flex-wrap flex-row justify-content-center justify-content-lg-between">
                     <li class="nav-item border-item ">
@@ -62,27 +60,36 @@
                     </li>
                 </ul>
             </nav>
-        {{--</div>--}}
     </header>
 
-    <div id="demo" class="carousel slide flex-conteiner" data-ride="carousel">
+    <div id="demo" class="carousel fade flex-conteiner" data-ride="carousel">
 
         <!-- The slideshow -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img\next5.jpg" alt="Los Angeles"  >
+                <a>
+                    <img src="img\next5.jpg" alt="Los Angeles"  >
+                </a>
             </div>
             <div class="carousel-item">
-                <img src="img\next1.jpg" alt="Chicago"  >
+                <a>
+                    <img src="img\next1.jpg" alt="Chicago"  >
+                </a>
             </div>
             <div class="carousel-item">
-                <img src="img\next2.jpg" alt="Chicago" >
+                <a>
+                    <img src="img\next2.jpg" alt="Chicago" >
+                </a>
             </div>
             <div class="carousel-item">
-                <img src="img\next3.jpeg" alt="Chicago"  >
+                <a>
+                    <img src="img\next3.jpeg" alt="Chicago"  >
+                </a>
             </div>
             <div class="carousel-item">
-                <img src="img\next4.jpeg" alt="Chicago" >
+                <a>
+                    <img src="img\next4.jpeg" alt="Chicago" >
+                </a>
             </div>
 
         </div>
@@ -97,7 +104,7 @@
 
     </div>
 
-    <div  class="content">
+    <div  class="content container">
         <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Главная</a></li>
             <li class="breadcrumb-item"><a href="#">Каталог</a></li>
@@ -105,7 +112,6 @@
         </ul>
         <div class="catalog row d-flex flex-wrap justify-content-lg-between justify-content-center  ">
             <div class=" leftblock col-lg-3 col-md-4 col-sm-6 col-12 ">
-                {{--d-flex flex-column flex-nowrap justify-content-center justify-content-lg-start--}}
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -145,7 +151,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <div class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Мобильная техника</a>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Мобильная техника </a>
                             </div>
                         </div>
                         <div id="collapse3" class="panel-collapse collapse">
@@ -188,59 +194,91 @@
                     <div class="price-list">Прайс-лист</div>
                 </div>
             </div>
-            <div class="centerblock col-lg-9 col-md-8  col-sm-6 col-12">
-                <div class="goods-conteiner d-flex flex-wrap align-items-stretch">
-                    <div class="tint">
-                        <div class="goods_inside">
-                            <img src="img\nophoto.png" class="goods-img" alt="" />
-                            <div class="disc-goods">Самый 1 клевый чайник, который надо купить! который надо купить! который надо купить! который надо купить! который надо купить! который надо купить! который надо купить!</div>
-                            <div class="purchase">
-                                <div class="price">1 900 р.</div>
-                                <img src="img\addtobasket_mini.png" class="addtobasket_mini" alt="" />
+
+            <div class="centerblock  col-lg-9 col-md-8  col-sm-6 col-12">
+                <div class="goods-conteiner row">
+                    <div class="tint row col-lg-4 col-md-6 col-12">
+                        <div class="tint-border col-8 col-sm-12 ">
+                            <div class="goods_inside row">
+                                <div class="img-block col-12">
+                                    <img src="img\nophoto.png" class="goods-img  " alt="" />
+                                </div>
+                                <div class="disc-goods  col-12">Самый 1 клевый чайник, который надо купить! который надо купить! который надо купить! который надо купить! который надо купить! который надо купить! который надо купить!</div>
+                                <div class="purchase  col-12 row">
+                                    <div class="price col-8">1 900 р.</div>
+                                    <div class="basket-box col-4">
+                                        <img src="img\addtobasket_mini.png" class="addtobasket_mini" alt="" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tint">
-                        <div class="goods_inside">
-                            <img src="img\nophoto.png" class="goods-img" alt="" />
-                            <div class="disc-goods">Самый 2 клевый чайник, который надо купить!</div>
-                            <div class="purchase">
-                                <div class="price">1 900 р.</div>
-                                <img src="img\addtobasket_mini.png" class="addtobasket_mini" alt="" />
+                    <div class="tint row col-lg-4 col-md-6 col-12">
+                        <div class="tint-border col-8 col-sm-12 ">
+                            <div class="goods_inside row">
+                                <div class="img-block col-12">
+                                    <img src="img\nophoto.png" class="goods-img  " alt="" />
+                                </div>
+                                <div class="disc-goods col-12">Самый 2 клевый чайник, который надо купить!</div>
+                                <div class="purchase col-12 row">
+                                    <div class="price col-8">1 900 р.</div>
+                                    <div class="basket-box col-4">
+                                        <img src="img\addtobasket_mini.png" class="addtobasket_mini" alt="" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tint">
-                        <div class="goods_inside">
-                            <img src="img\nophoto.png" class="goods-img" alt="" />
-                            <div class="disc-goods">Самый 3 клевый чайник, который надо купить!</div>
-                            <div class="purchase">
-                                <div class="price">1 900 р.</div>
-                                <img src="img\addtobasket_mini.png" class="addtobasket_mini" alt="" />
+                    <div class="tint row col-lg-4 col-md-6 col-12">
+                        <div class="tint-border col-8 col-sm-12 ">
+                            <div class="goods_inside row">
+                                <div class="img-block col-12">
+                                    <img src="img\nophoto.png" class="goods-img  " alt="" />
+                                </div>
+                                <div class="disc-goods col-12">Самый 3 клевый чайник, который надо купить!</div>
+                                <div class="purchase col-12 row">
+                                    <div class="price col-8">1 900 р.</div>
+                                    <div class="basket-box col-4">
+                                        <img src="img\addtobasket_mini.png" class="addtobasket_mini" alt="" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tint">
-                        <div class="goods_inside">
-                            <img src="img\nophoto.png" class="goods-img" alt="" />
-                            <div class="disc-goods">Самый 4 клевый чайник!</div>
-                            <div class="purchase">
-                                <div class="price">1 900 р.</div>
-                                <img src="img\addtobasket_mini.png" class="addtobasket_mini" alt="" />
+                    <div class="tint row col-lg-4 col-md-6 col-12">
+                        <div class="tint-border col-8 col-sm-12 ">
+                            <div class="goods_inside row">
+                                <div class="img-block col-12">
+                                    <img src="img\nophoto.png" class="goods-img  " alt="" />
+                                </div>
+                                <div class="disc-goods col-12">Самый 4 клевый чайник!</div>
+                                <div class="purchase col-12 row">
+                                    <div class="price col-8">1 900 р.</div>
+                                    <div class="basket-box col-4">
+                                        <img src="img\addtobasket_mini.png" class="addtobasket_mini" alt="" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tint">
-                        <div class="goods_inside">
-                            <img src="img\nophoto.png" class="goods-img" alt="" />
-                            <div class="disc-goods">Самый 5 клевый чайник</div>
-                            <div class="purchase">
-                                <div class="price">1 900 р.</div>
-                                <img src="img\addtobasket_mini.png" class="addtobasket_mini" alt="" />
+                    <div class="tint row col-lg-4 col-md-6 col-12">
+                        <div class="tint-border col-8 col-sm-12 ">
+                            <div class="goods_inside row">
+                                <div class="img-block col-12">
+                                    <img src="img\nophoto.png" class="goods-img  " alt="" />
+                                </div>
+                                <div class="disc-goods col-12">Самый 5 клевый чайник</div>
+                                <div class="purchase col-12 row">
+                                    <div class="price col-8">1 900 р.</div>
+                                    <div class="basket-box col-4">
+                                        <img src="img\addtobasket_mini.png" class="addtobasket_mini" alt="" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="pagination-box">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
@@ -254,7 +292,8 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="about-catalog d-flex flex-nowrap flex-row justify-content-center">
+
+                <div class="about-catalog d-flex flex-row flex-lg-nowrap flex-wrap justify-content-center">
                     <div class="about-left">
                         <p class="about-text">Компания «Пиксель Плюс» существует более 6 лет, за это время мы.
                             Компания «Пиксель Плюс» существует более 6 лет, за это время мы.
@@ -270,9 +309,47 @@
                             Одним из основных направлений работ нашей компании является </p>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
+
+    <footer >
+        <div  class="footer-box row">
+            <div  class=" left-footer col-lg-4 col-12">
+                <p> © 2012–2013 ЗАО «Компания» </p>
+                <p>info@name.ru</p>
+            </div>
+            <div  class="center-footer col-lg-4 col-12">
+                <ul class="list-footer">
+                    <li class="li-footer">
+                        <a href="#">Главная <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="li-footer">
+                        <a href="#">Каталог</a>
+                    </li>
+                    <li class="li-footer">
+                        <a href="#">Доставка и оплата</a>
+                    </li>
+                    <li class="li-footer">
+                        <a  href="#">Прайс-лист</a>
+                    </li>
+                    <li class="li-footer">
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div  class="right-footer  col-lg-4 col-12">
+                <img src="img\dev-logo.png" class="dev-logo" alt="" />
+                <div class="dev-comp">
+                    <p> Разработка сайта — </p>
+                    <p>компания «Пиксель Плюс»</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
 </div>
 </body>
 </html>
